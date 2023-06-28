@@ -1,0 +1,275 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* ========================================= */
+
+.application {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+.btn {
+  padding: 0;
+}
+
+.btn:hover,
+.btn:active {
+  font-size: 15px;
+}
+
+/* ========================================= */
+/* START & ONCHANGE */
+.start-exploring {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.start-icon {
+  width: 70px;
+  height: 61px;
+  opacity: 0.1;
+  margin: 15vh 0 0;
+}
+
+.start-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #2e2e2f;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+/* ========================================= */
+
+.icon {
+  width: 16px;
+  height: 16px;
+  margin: 0 5px 0 15px;
+}
+
+/* ========================================= */
+/* HEADER */
+.header {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  background: url("img/intro-background.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.header-introduction {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.header-container-link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.introduction {
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 36px;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* ========================================= */
+/* SEARCH */
+
+.search {
+  position: absolute;
+  top: 180px;
+  left: auto;
+  right: auto;
+}
+
+.search-form {
+  text-align: center;
+  display: flex;
+
+  width: 85vw;
+  height: 38px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.search-img {
+  height: 100%;
+  background: #2e2e2f;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px 0 0 6px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.search-form-input {
+  width: 80%;
+  text-align: start;
+  margin: 0;
+
+  background: #2e2e2f;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border: none;
+  color: #a5a5a5;
+}
+.search-btn {
+  width: 20%;
+  background: #4b4b4b;
+  border-radius: 0px 6px 6px 0px;
+  border: none;
+  color: inherit;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* ========================================= */
+/* CONTAINER */
+
+.container {
+  width: 85vw;
+  margin: 0;
+  padding: 40px 0 0 0;
+
+  font-family: "Inter";
+  font-style: normal;
+  line-height: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.container-movie {
+  width: 80vw;
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: 99px 60vw;
+  grid-template-areas: "movie-poster container-information";
+  border-bottom: 1px solid #2c2c2c;
+  gap: 20px;
+}
+
+.poster {
+  width: 99px;
+  height: 147px;
+}
+.movie-poster {
+  width: 100%;
+}
+/* .movie-poster:hover {
+    transform: scale(1.5);     
+} */
+
+.container-information {
+  display: flex;
+  flex-direction: column;
+
+  /* border-bottom: 1px solid #2C2C2C; */
+}
+
+.movie-title-rating {
+  display: flex;
+}
+
+.movie-title {
+  margin: 0;
+  display: block;
+
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.rating {
+}
+
+.description {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.description:hover {
+}
+
+.information-description {
+  width: 80%;
+  margin: 20px 0 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.information-plot {
+}
+
+.plot {
+  /* text-align: start;
+    text-decoration: none;
+    background: inherit;
+    border: none;
+    color: inherit; */
+  overflow: hidden;
+}
+
+.clear {
+  background: none;
+  border: none;
+  color: white;
+}
+
+/* ========================================= */
+
+.img-plus {
+  display: inline-block;
+  background-image: url("img/plus-icon.png");
+  background-size: cover;
+}
+
+.img-minus {
+  display: inline-block;
+  background-image: url("img/minus-icon.png");
+  background-size: cover;
+}
