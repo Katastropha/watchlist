@@ -2,19 +2,22 @@ html,
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   background-color: #121212;
   color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /* ========================================= */
 
 .application {
-  width: 100vw;
-  height: 100%;
+  /* width: 100vw; */
+  /* height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
 
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -43,7 +46,7 @@ body {
   width: 70px;
   height: 61px;
   opacity: 0.1;
-  margin: 15vh 0 0;
+  margin: 50% 0 0;
 }
 
 .start-text {
@@ -79,6 +82,10 @@ body {
   background-size: auto;
 }
 
+.header + .search {
+  margin-top: -20px;
+}
+
 .header-introduction {
   width: 85%;
   display: flex;
@@ -108,14 +115,8 @@ body {
 /* ========================================= */
 /* SEARCH */
 
-.search {
-  position: absolute;
-  top: 180px;
-  left: auto;
-  right: auto;
-}
-
 .search-form {
+  margin: auto;
   text-align: center;
   display: flex;
 
@@ -141,7 +142,7 @@ body {
 }
 
 .search-form-input {
-  width: 80%;
+  width: 85%;
   text-align: start;
   margin: 0;
 
@@ -166,26 +167,27 @@ body {
 /* CONTAINER */
 
 .container {
-  width: 85vw;
+  width: 100%;
   margin: 0;
-  padding: 40px 0 0 0;
-
+  padding: 30px 0 0 0;
   font-family: "Inter";
   font-style: normal;
   line-height: 20px;
 
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .container-movie {
-  width: 80vw;
+  width: 85%;
   padding: 20px 0;
+  align-self: center;
   display: grid;
-  grid-template-columns: 99px 60vw;
+  grid-template-columns: 20% 75%;
   grid-template-areas: "movie-poster container-information";
   border-bottom: 1px solid #2c2c2c;
-  gap: 20px;
+  /* gap: 10%; */
 }
 
 .poster {
@@ -194,16 +196,6 @@ body {
 }
 .movie-poster {
   width: 100%;
-}
-/* .movie-poster:hover {
-    transform: scale(1.5);     
-} */
-
-.container-information {
-  display: flex;
-  flex-direction: column;
-
-  /* border-bottom: 1px solid #2C2C2C; */
 }
 
 .movie-title-rating {
@@ -218,9 +210,6 @@ body {
   font-size: 18px;
 }
 
-.rating {
-}
-
 .description {
   cursor: pointer;
   display: flex;
@@ -228,11 +217,9 @@ body {
   text-align: center;
   align-items: center;
 }
-.description:hover {
-}
 
 .information-description {
-  width: 80%;
+  width: 85%;
   margin: 20px 0 0;
 
   display: flex;
@@ -240,18 +227,6 @@ body {
 
   font-weight: 400;
   font-size: 12px;
-}
-
-.information-plot {
-}
-
-.plot {
-  /* text-align: start;
-    text-decoration: none;
-    background: inherit;
-    border: none;
-    color: inherit; */
-  overflow: hidden;
 }
 
 .clear {
