@@ -187,7 +187,6 @@ body {
   grid-template-columns: 20% 75%;
   grid-template-areas: "movie-poster container-information";
   border-bottom: 1px solid #2c2c2c;
-  /* gap: 10%; */
 }
 
 .poster {
