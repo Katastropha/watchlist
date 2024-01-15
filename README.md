@@ -1,4 +1,4 @@
-# cMK6PqsJ
+# Whatchlist
 
 ![whatchlist_screenshot](image.png)
 
