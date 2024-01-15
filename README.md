@@ -1,6 +1,6 @@
-# Whatchlist
+# Watchlist
 
-![whatchlist_screenshot](image.png)
+![watchlist_screenshot](image.png)
 
 Quick start:
 
